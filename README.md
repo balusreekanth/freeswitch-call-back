@@ -24,7 +24,7 @@ This script provides a **call back feature** for **FreeSWITCH** and **FusionPBX*
    cd call-back-feature
    chmod +x install.sh
    ./install.sh
-
+```
 ### 2. **Add a Dialplan**
 To enable call-back functionality, you need to add a dialplan with the highest priority to check the dialed extension's status. This can be configured using the FusionPBX Dialplan Manager.
 
