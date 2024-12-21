@@ -29,13 +29,18 @@ To enable call-back functionality, you need to add a dialplan with the highest p
 
 Below is an example dialplan:
 
+### 2. **Add a Dialplan**
+To enable call-back functionality, you need to add a dialplan with the highest priority to check the dialed extension's status. This can be configured using the FusionPBX Dialplan Manager.
+
+Below is an example dialplan:
+
 ```xml
 <condition field="destination_number" expression="^\d+$">
     <action application="log" data="WARNING Checking activity status for extension ${destination_number}"/>
     <action application="lua" data="dest_exist.lua ${destination_number} ${caller_id_number} ${domain_name}"/>
     <action application="log" data="WARNING extension activity status is ${sip_dialogs_status}"/>
     <action application="sleep" data="200"/>
-</condition>````
+</condition>
 
 - By default, the system uses the **conference** method for call-backs. This means both parties will be added to a conference room when the call-back is triggered.
 - The system checks for pending call-backs every 15 seconds. You can adjust this timer to increase or decrease the interval as needed.
