@@ -43,8 +43,9 @@ Below is an example dialplan:
 </condition>
 ```
 - By default, the system uses the **conference** method for call-backs. This means both parties will be added to a conference room when the call-back is triggered.
-- The system checks for pending call-backs every 15 seconds. You can adjust this timer to increase or decrease the interval as needed.
 If you prefer to use the originate method (direct extension-to-extension call), update the configuration in the call-b.py script.
+- The system checks for pending call-backs every 15 seconds. You can adjust this timer to increase or decrease the interval as needed.
+
 
 ## How It Works
 1. When an extension tries to call another extension, the system checks if the called extension is busy.
