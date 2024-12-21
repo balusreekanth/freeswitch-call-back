@@ -7,7 +7,8 @@ This script provides a **call back feature** for **FreeSWITCH** and **FusionPBX*
 - Detects when a called extension is busy.
 - Plays an IVR asking the caller if they want a call back.
 - Saves call back requests in the database.
-- Triggers the call back when the called extension is no longer busy.
+- Triggers the call-back when both the called extension and the requested party are no longer busy.
+- Option to choose the call-back method: Conference room or user-to-user calling.
 - Fully integrated with **FreeSWITCH** and **FusionPBX**.
 
 ## Requirements
