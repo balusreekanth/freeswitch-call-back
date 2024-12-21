@@ -12,8 +12,10 @@ This script provides a **call back feature** for **FreeSWITCH** and **FusionPBX*
 - Fully integrated with **FreeSWITCH** and **FusionPBX**.
 
 ## Requirements
-- **FreeSWITCH** version 1.8.x or higher.
-- **FusionPBX** version 5.x .
+
+
+- [**FreeSWITCH**](https://github.com/signalwire/freeswitch) version 1.8.x or higher.
+- [**FusionPBX**](https://github.com/fusionpbx/fusionpbx) version 5.x .
 - A working fusionPBX database PostgreSQL for storing call back requests.
 - Basic knowledge of FreeSWITCH dialplan and FusionPBX configuration.
 
