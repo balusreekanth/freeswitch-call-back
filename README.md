@@ -35,7 +35,7 @@ Below is an example dialplan:
     <action application="lua" data="dest_exist.lua ${destination_number} ${caller_id_number} ${domain_name}"/>
     <action application="log" data="WARNING extension activity status is ${sip_dialogs_status}"/>
     <action application="sleep" data="200"/>
-</condition>
+</condition>````
 
 - By default, the system uses the **conference** method for call-backs. This means both parties will be added to a conference room when the call-back is triggered.
 - The system checks for pending call-backs every 15 seconds. You can adjust this timer to increase or decrease the interval as needed.
