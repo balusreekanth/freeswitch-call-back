@@ -24,7 +24,7 @@ This script provides a **call back feature** for **FreeSWITCH** and **FusionPBX*
 ### 1. **Clone the repository**:
    ```bash
    git clone https://github.com/balusreekanth/freeswitch-call-back.git
-   cd call-back-feature
+   cd freeswitch-call-back
    chmod +x install.sh
    ./install.sh
 ```
